@@ -15,6 +15,8 @@ def data_upload_mongo(shows_list: list) -> list:
 
 	shows_collection = concerts_db['shows']
 
+	shows_collection.drop()
+
 	shows = shows_collection.insert_many(shows_list).inserted_ids
 
 	print(f'В базу данных добавлено {len(shows)} мероприятий.')

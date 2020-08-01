@@ -12,3 +12,4 @@ def find_cheapest():
 
 	for show in shows_collection.find().sort('Цена', pymongo.ASCENDING):
 		print(show)
+
