@@ -1,8 +1,9 @@
 import csv
 
 
-def csv_to_dict(path='C:/Users/79055/PycharmProjects/ORM/data/artists.csv') -> list:
+def read_data(path='C:/Users/79055/PycharmProjects/ORM/data/artists.csv') -> list:
 	"""
+	Функция чтения данных из .csv файла
 
 	:param path: путь к нашему файлу по умолчанию прописан в аргументы, но при желании можно обработать любой
 	список концертов с идентичной структурой

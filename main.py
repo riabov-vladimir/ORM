@@ -1,4 +1,7 @@
-from shows_to_mongo.csv_to_json import csv_to_dict
+from shows_to_mongo.read_data import read_data
+from shows_to_mongo.data_upload_mongo import data_upload_mongo
 
-shows_list = csv_to_dict()   # подготовили данные для работы с MongoDB
 
+shows_list = read_data()   # подготовили данные для работы с MongoDB
+
+data_upload_mongo(shows_list)  # загружаем полученные данные в MongoDB
