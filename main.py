@@ -7,7 +7,7 @@ shows_list = read_data()   # подготовили данные для рабо
 
 data_upload_mongo(shows_list)  # загружаем полученные данные в MongoDB
 
-find_by_name('top hit Music Awards 2019')
+find_by_name('fest')  # найдем концерты исполнителя, в названии которого есть неточности регистра
 
-find_cheapest()
+find_cheapest()  # выводим все события отсортированные во возрастанию цены (вовремя догадался привести цены к int)
 
